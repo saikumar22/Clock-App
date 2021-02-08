@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js"></script>
+  <title>clock</title>
+</head>
+<body>
+  <div id="time">
+    <h1 class="header">CURRENT TIME</h1>
+    <div class="square">
+      <div class="digits" id="chr">00</div>
+      <div class="text">HR</div>
+    </div>
+    <div class="square">
+      <div class="digits" id="cmin">00</div>
+      <div class="text">MIN</div>
+    </div>
+    <div class="square">
+      <div class="digits" id="csec">00</div>
+      <div class="text">SEC</div>
+    </div>
+  </div>
+
+  <div id="tpick">
+    <h1 class="header">SET ALARM</h1>
+    <div id="tpick-h"></div>
+    <div id="tpick-m"></div>
+    <div id="tpick-s"></div>
+    <div>
+      <input type="button" value="Set" id="tset"/>
+      <input type="button" value="Reset" id="treset" disabled/>
+    </div>
+  </div>
+
+  <audio id="alarm-sound" loop>
+    <source src="./mixkit-vintage-warning-alarm-990.wav" type="audio/mp3">
+    </audio>
+  
+</body>
+</html>
